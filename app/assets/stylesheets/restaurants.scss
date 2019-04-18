@@ -4,8 +4,8 @@
 .navbar {
   height: 70px;
   box-shadow: var(--shadow);
-  background-color: #6200EE;
-  color: white;
+  background-color:brown;
+  color: rgb(0, 0, 0);
 }
 
 .navbar-logo {
@@ -21,10 +21,14 @@
 
 .navbar-links {
   // display: flex;
-  padding-left: 700px;
+  padding-left: 500px;
   padding-top: 50px;
   float: right;
   height: 100%;
   // align-items: center;
   // justify-content: center;
+}
+.container {
+  height: 90vh;
+  background: url('./restaurant.jpg');
 }

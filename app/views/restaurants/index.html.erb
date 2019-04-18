@@ -3,16 +3,10 @@
       <h3 class="logo"><i class="fab fa-affiliatetheme"></i></h3>
       <h1>Restaurants</h1>
       <div class="navbar-links">
-      <a href="" class="link">Link</a> 
-      <a href="" class="link">Link</a>
+      <%= link_to "List of Restaurants", restaurant_list_path %></li>
     </div>
     </div>
   </div>
-<ul>
-    <% @restaurants.each_with_index do |restaurant, index| %>
-        <li>
-            <%= restaurant.title %> - <%= restaurant.food_type %> <%= link_to "show", restaurant_path(restaurant.id) %>
-            <p>Reviews: <%= restaurant.reviews.count %></p>
-            </li>
-    <% end %>
-</ul>
+  <div class="container">
+  
+    </div>
