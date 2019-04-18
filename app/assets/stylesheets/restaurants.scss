@@ -1,3 +1,30 @@
 // Place all the styles related to the restaurants controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.navbar {
+  height: 70px;
+  box-shadow: var(--shadow);
+  background-color: #6200EE;
+  color: white;
+}
+
+.navbar-logo {
+  float:left;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 15px;
+}
+
+.navbar-links {
+  // display: flex;
+  padding-left: 700px;
+  padding-top: 50px;
+  float: right;
+  height: 100%;
+  // align-items: center;
+  // justify-content: center;
+}
