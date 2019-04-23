@@ -1,6 +1,8 @@
 class RestaurantsController < ApplicationController
+  authorize_resource
   def index
     @restaurants = Restaurant.all
+    authorize! :show, @restaurants
   end
 
   def create
@@ -19,6 +21,8 @@ class RestaurantsController < ApplicationController
 
   def show
     @restaurant = Restaurant.find(params[:id])
+    
+    
   end
   def edit
     @restaurant = Restaurant.find(params[:id])
@@ -34,8 +38,10 @@ def update
       end
 end
 
+
 def list
   @restaurants = Restaurant.all
+  authorize! :show, @restaurants
 end
 
   private

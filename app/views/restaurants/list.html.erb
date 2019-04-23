@@ -3,15 +3,20 @@
       <div class="navbar-links">
       <%= link_to "Restaurant List", restaurant_list_path %> 
       <%= link_to "New Restaurants", new_restaurant_path %>
+      
     </div>
   </div>
   <div class="background">
-<ol>
-    <% @restaurants.each_with_index do |restaurant, index| %>
-        <li>
-            <%= restaurant.title %> - <%= restaurant.food_type %> <%= link_to "show", restaurant_path(restaurant.id) %>
-            <p>Reviews: <%= restaurant.reviews.count %></p>
-            </li>
-    <% end %>
-</ol>
+  <ul>
+  <% @restaurants.each_with_index do |restaurant, index| %>
+      <li>
+          <%= restaurant.title %> - <%= restaurant.food_type %> 
+          <%= link_to "show", restaurant_path(restaurant.id) %>
+          <% if can? :update, restaurant %>
+           <%= link_to "edit", edit_restaurant_path(restaurant.id) %>
+           <% end %>
+          <p>Reviews: <%= restaurant.reviews.count %></p>
+      </li>
+  <% end %>
+</ul>
 </div>
