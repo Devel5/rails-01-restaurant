@@ -33,10 +33,11 @@ def update
         render 'edit'
       end
 end
+
 def list
-  puts '=========================='
   @restaurants = Restaurant.all
 end
+
   private
       def restaurant_params
         params.permit(:title, :address, :description, :food_type)

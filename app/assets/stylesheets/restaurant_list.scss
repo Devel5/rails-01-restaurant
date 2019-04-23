@@ -1,0 +1,21 @@
+.navbar {
+  height: 100px;
+  box-shadow: var(--shadow);
+  background-color:brown;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-family: sofia;
+}
+.navbar-links {
+  padding: 0 25px;
+}
+.background{
+  height: 90vh;
+  background: url('./image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  overflow: scroll;
+}
